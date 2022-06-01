@@ -1,5 +1,6 @@
 let container = document.querySelector('.container');
 let buttonCellChange = document.querySelector('.changeCellCount');
+let cleanButton = document.querySelector('.clean');
 let tempCell;
 let containerSize = container.clientWidth;
 console.log(containerSize)
@@ -49,6 +50,10 @@ buttonCellChange.addEventListener('click', ()=>{
     {
         alert("Enter only numbers!")
     }
+})
+
+cleanButton.addEventListener('click',()=>{
+    container.childNodes.forEach(node => node.style.backgroundColor = 'white')
 })
 
 generateField(16)
