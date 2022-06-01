@@ -9,7 +9,13 @@ console.log(containerSize)
 // container.style.height = '480px';
 
 let hovering = function(event){
-    event.target.style.backgroundColor = "black";
+    let r,g,b;
+    r = Math.floor(Math.random() * 256);
+    g = Math.floor(Math.random() * 256);
+    b = Math.floor(Math.random() * 256);
+    console.log(`rgb(${r},${b},${b})`)
+    // event.target.style.backgroundColor = "black";
+    event.target.style.backgroundColor = `rgb(${r},${b},${b})`;
 }
 let generateField = (count)=>{
     let cellSize = containerSize/count;
