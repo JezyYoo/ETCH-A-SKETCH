@@ -1,17 +1,18 @@
-body{
+*,body{
     margin:0px;
     padding:0px;
+    box-sizing: border-box;
 }
 .container{
-    width:516px;
-    height: 516px;
+    width:480px;
+    height: 480px;
     display:flex;
     flex-wrap: wrap;
     
 }
 
 .cell{
-    border:1px solid black;
+    /* border:1px solid black; */
     background-color: aqua;
     height:30px;
     width:30px;

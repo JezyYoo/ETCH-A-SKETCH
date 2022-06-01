@@ -3,7 +3,6 @@ let tempCell;
 
 let Hovering = function(event){
     event.target.style.backgroundColor = "black";
-    console.log(event.target.style.backgroundColor)
 }
 
 for (let y= 0; y < 16; y++) {
